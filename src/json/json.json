@@ -1,0 +1,36 @@
+{
+    "teams": [
+      {
+        "name": "Mercedes",
+        "nationality": "German",
+        "drivers": [
+          {
+            "name": "Lewis Hamilton",
+            "number": 44,
+            "championships": 7
+          },
+          {
+            "name": "Valtteri Bottas",
+            "number": 77,
+            "championships": 0
+          }
+        ]
+      },
+      {
+        "name": "Red Bull Racing",
+        "nationality": "Austrian",
+        "drivers": [
+          {
+            "name": "Max Verstappen",
+            "number": 33,
+            "championships": 0
+          },
+          {
+            "name": "Sergio Perez",
+            "number": 11,
+            "championships": 0
+          }
+        ]
+      }
+    ]
+  }
