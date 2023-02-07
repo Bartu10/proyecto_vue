@@ -37,7 +37,8 @@ export default {
   data: () => ({
     email: "",
     password: "",
-    passwordRepeat: ""
+    passwordRepeat: "",
+    error: ""
   }),
   methods: {
     register() {
@@ -45,9 +46,15 @@ export default {
       console.log(this.password);
       console.log(this.passwordRepeat);
     },
-    validator() {
-      if (this.email.length === 0 ||  ) 
+    validator() { 
+      if (this.email.length === 0 || !(/^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/.test(this.email))) 
+      {this.error = "El correo es incorrecto"}
+      if (this.password.length === 0 || !(/^(?=\w*\d)(?=\w*[A-Z])(?=\w*[a-z])\S{8,16}$/).test(this.password))
+      {this.error = "El password es incorrecto"}
+      if (this.password !== this.passwordRepeat)
+      {this.error = "El "}
     }
+    
   }
 };
 </script>
