@@ -1,56 +1,39 @@
+
 <template>
-<ul>
-  <li><router-link to="/">home</router-link></li>
-  <li><router-link to="/races">carreras</router-link></li>
-  <li><router-link to="/pilots">pilotos</router-link></li>
-  <li><router-link to="/leaderboard">leaderboard</router-link></li>
-</ul>
+  <nav>
+    <ul class="navbar">
+      <li><router-link to="/">home</router-link></li>
+      <li><router-link to="/races">carreras</router-link></li>
+      <li><router-link to="/pilots">pilotos</router-link></li>
+      <li><router-link to="/leaderboard">leaderboard</router-link></li>
+    </ul>
+  </nav>
 </template>
 
-<script lang="js">
-export default {}
-</script>
-
 <style scoped lang="scss">
-@import url("https://fonts.googleapis.com/css?family=Raleway:400,400i,700");
-
-body {
+.navbar {
   display: flex;
-  height: 100vh;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-  text-align: center;
-  background: #1A1E23;
-}
+  list-style: none;
+  padding: 1rem;
+  background-color: #333;
+  color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
 
-ul {
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  list-style-type: none;
-
-  li {
-    padding: 6px 0;
-
-    a {
-      --fill-color: #198CE6;
-      position: relative;
-      display: block;
-      padding: 4px 0;
-      font: 700 3rem Raleway, sans-serif;
-      text-decoration: none;
-      text-transform: uppercase;
-      -webkit-text-stroke: 2px var(--fill-color);
-      background: linear-gradient(var(--fill-color) 0 100%) left / 0 no-repeat;
-      color: transparent;
-      background-clip: text;
-      transition: 0.5s linear;
-
-      
-      }
+  &-item {
+    &:not(:last-child) {
+      margin-right: 1rem;
     }
   }
-.router-link-active{
-    color: brown;
+
+  &-link {
+    color: inherit;
+    text-decoration: none;
+  }
 }
 </style>

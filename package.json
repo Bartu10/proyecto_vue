@@ -8,11 +8,16 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "bootstrap": "^5.2.3",
+    "bootstrap-vue": "^2.23.1",
+    "gitart-scroll-carousel": "^1.2.4",
     "sass": "^1.58.0",
-    "vue": "^3.2.45",
-    "vue-router": "^4.1.6"
+    "vue": "^3.2.47",
+    "vue-router": "^4.1.6",
+    "vuelidate": "^0.7.7"
   },
   "devDependencies": {
+    "@nuxtjs/vuetify": "^1.12.3",
     "@vitejs/plugin-vue": "^4.0.0",
     "vite": "^4.0.0"
   }
